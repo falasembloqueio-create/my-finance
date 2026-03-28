@@ -1,0 +1,34 @@
+@tailwindcss/postcss
+
+
+@layer components {
+  .input-store {
+    @apply w-full bg-slate-950 border border-slate-800 rounded-2xl px-5 py-3 text-white outline-none focus:border-violet-500 transition-all placeholder:text-slate-700 text-sm shadow-inner;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Scrollbar personalizada para o histórico */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
