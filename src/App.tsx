@@ -1,8 +1,14 @@
 import { useState, useEffect } from "react";
 import { 
-  Wallet, TrendingUp, TrendingDown, LogOut, Trash2, Tag, 
-  ArrowUpCircle, ArrowDownCircle, PieChart, Lock, Mail, 
-  LayoutGrid, List, Plus, Minus, BarChart3 
+  Wallet, 
+  TrendingUp, 
+  TrendingDown, 
+  LogOut, 
+  Trash2, 
+  PieChart, 
+  LayoutGrid, 
+  List, 
+  BarChart3 
 } from "lucide-react";
 import { supabase } from "./supabase";
 
