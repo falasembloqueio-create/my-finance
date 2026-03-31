@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# My-Finance 💰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Sistema completo de gestão financeira pessoal com persistência de dados em tempo real.
 
-Currently, two official plugins are available:
+O **My-Finance** é uma aplicação robusta desenvolvida para ajudar usuários a controlarem suas receitas e despesas de forma intuitiva. Este projeto faz parte do meu intensivo de 18 dias, onde foquei em integrar o ecossistema React com serviços de Backend (BaaS).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Links
+- **Deploy:** [https://falasembloqueio-create.github.io/my-finance/](https://falasembloqueio-create.github.io/my-finance/)
+- **Repositório:** [https://github.com/falasembloqueio-create/my-finance](https://github.com/falasembloqueio-create/my-finance)
 
-## React Compiler
+## 🛠️ Tecnologias e Ferramentas
+- **React + Vite**: Base da aplicação para alta performance.
+- **TypeScript**: Tipagem estática para um código mais seguro e escalável.
+- **Supabase**: Utilizado para autenticação de usuários e banco de dados (PostgreSQL).
+- **Tailwind CSS**: Estilização moderna com foco em Dark Mode e responsividade.
+- **Lucide React**: Biblioteca de ícones premium.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Funcionalidades Principais
+- **CRUD de Transações**: Adicionar, listar e excluir receitas ou despesas.
+- **Persistência de Dados**: Seus dados ficam salvos na nuvem via Supabase.
+- **Cálculo Automático**: Saldo atualizado em tempo real conforme as entradas e saídas.
+- **Interface Dark**: Design focado em legibilidade e modernidade.
 
-## Expanding the ESLint configuration
+## 🧠 Desafios e Aprendizados
+O maior desafio deste projeto foi a **integração com o Supabase**. Aprendi a configurar as políticas de segurança (RLS) do banco de dados, garantindo que cada usuário visualize apenas os seus próprios dados. Também aprimorei meus conhecimentos em **Hooks customizados** e gerenciamento de estado global para refletir as atualizações do saldo instantaneamente.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Desenvolvido por [Davi] - [Conecte-se comigo no LinkedIn](www.linkedin.com/in/davi-gomes-azevedo-b326b139b)
